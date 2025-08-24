@@ -1,9 +1,9 @@
 # Synara OS CODEOWNERS
-
-# Everything defaults to you
+ 
+# Everything defaults to @DerekWiner
 *   @DerekWiner
 
 # Example for future expansion:
-# /contracts/*     @your-github-username
+# /contracts/*     @DerekWiner
 # /chain/*         @teammate-handle
 # /docs/*          @doc-writer
