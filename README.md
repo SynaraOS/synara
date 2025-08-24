@@ -45,6 +45,7 @@ Coming soon:
 ## License
 - Synara OS code → **MIT**  
 - Origin inspiration → fork of [Alvearium (CC0 + Swarm Clause)](https://github.com/derekwiner/alvearium)
+- Respect "Use Without Malice" Ethos
 
 ---
 
