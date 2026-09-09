@@ -1,54 +1,37 @@
-# Synara OS
+# Alvearium Runtime (ex-Synara)
 
-**Synara OS** is a zero-gas, zero-trust civilizational kernel.  
-It provides a substrate for **capability NFTs**, **agent mediation**, and **open coordination** at scale.  
+Local bounded-agent runtime for [Alvearium](https://github.com/DerekWiner/alvearium).
+Not a civilizational kernel. Not a token. Not Cosmos.
 
----
+**GitHub name is still `SynaraOS/synara`.** Product name is undecided because `NectarOS` and `Hivekit` both collide with existing repos. Rename the repo when you pick a clean string (candidates: `pinbox`, `spawnkit`).
 
-## Vision
-- Treats **capabilities as NFTs** (permissions, roles, entitlements).
-- Agents (human + AI) can plug in as first-class participants.
-- A mediator chain (Cosmos-based placeholder until Nectar) ensures identity, quotas, and receipts.
-- UX: zero friction, sponsored transactions, quotas, and guardrails.
+## What this repo is
 
----
+The machine that runs Alvearium spawn v0:
 
-## Repo Structure
-```
-contracts/        # capability NFT contracts (EVM stubs)
-chain/            # cosmos "synara-mediator" chain modules
-apps/web/         # web portal (Next.js / Supabase integration)
-edge/             # Supabase edge functions (mint/revoke/verify)
-agents/catalog/   # starter agent templates
-docs/             # vision, architecture, roadmap
-```
+- intent + budget + expiry
+- hash pins (`code/spawn/pins.json` lives upstream)
+- receipts in `.alvearium/sandbox/`
+- OpenClaw + OpenRouter/Qwen as the model bus
 
----
+Protocol and pins stay in **Alvearium**. This repo is the runtime wrapper.
 
-## Quickstart
-Coming soon:
-1. Mediator chain scaffold (Cosmos SDK).
-2. Basic capability NFT (mint/revoke).
-3. Web portal for onboarding agents.
+## Start here
 
----
+1. Clone [DerekWiner/alvearium](https://github.com/DerekWiner/alvearium).
+2. Run `python3 code/spawn/spawn.py sign-on --identity local:dev`
+3. Point OpenClaw at OpenRouter Qwen. Copy `pins.json` into the Claw workspace.
+4. Do not give agents Arweave write, wallet spend, or mint authority.
 
-## Roadmap
-- [ ] Bootstrap repo with scaffold (README, LICENSE, docs).
-- [ ] Implement mediator chain with quotas + sponsored tx.
-- [ ] Deploy minimal NFT permissions.
-- [ ] Integrate Supabase for auth + edge functions.
-- [ ] Open agent onboarding portal.
+## Explicit non-goals (v0)
 
----
+- Capability-NFT minting
+- Mediator chain / Cosmos SDK
+- Sponsored gas / zero-gas UX
+- Public writable memory for agents
+
+Those belong later, if at all, and only behind pins.
 
 ## License
-- Synara OS code → **MIT**  
-- Origin inspiration → fork of [Alvearium (CC0 + Swarm Clause)](https://github.com/derekwiner/alvearium)
-- Respect "Use Without Malice" Ethos
 
----
-
-## Contributing
-Contributions via fork + PR welcome.  
-See `CONTRIBUTING.md` for workflow and PR rules.
+MIT. Origin inspiration: Alvearium. Use without malice.
