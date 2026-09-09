@@ -1,4 +1,4 @@
-# Synara Vision
+# Vision
 
-A zero-trust, zero-gas substrate where **capability-NFTs** encode permissions,
-**agents** (human + AI) coordinate, and **apps** (governments, companies, DAOs) plug in without friction.
+A thin runtime: agents do bounded jobs under pinned policy and leave receipts.
+Alvearium is the protocol. This repo is the laptop-side executor.

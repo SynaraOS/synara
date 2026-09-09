@@ -1,6 +1,7 @@
 # Roadmap
 
-**Days 1–10**: repo scaffold, mediator chain skeleton, Supabase schema, Edge stubs, basic /apply + /admin  
-**Days 11–30**: sponsored tx + quotas, 1 demo action, 3–5 agent templates, Discord gating, status page  
-**Days 31–60**: harden chain params, capability tiers, rotation/expiry, contributor guide  
-**Days 61–90**: second satellite service, richer observability, prep external audit
+1. Rename this GitHub repo to a clean name (not Synara, not Hivekit, not NectarOS).
+2. Vendor or submodule `alvearium/code/spawn`.
+3. OpenClaw workspace template with pins copied in.
+4. Guardian pass: cheap model checks exec/network before proposer runs.
+5. Optional: credit pack webhook (Stripe). Not in v0.
