@@ -1,12 +1,11 @@
 # Architecture
 
 ```
-OpenClaw  →  spawn.py (budget, ledger, receipt)
+OpenClaw  →  alvearium/code/spawn/spawn.py
                 ↑
-           pins.json + mount_genesis.py   (fail closed)
+           pins.json + mount_genesis.py
                 ↑
-           Alvearium docs/spawn.md
+           docs/spawn.md
 ```
 
-Compute is local or OpenRouter. Arweave is optional freeze of genesis JSON only.
-NFT mint addresses are identity tags, not the OS.
+NFT mint addresses are identity tags, not the kernel.
