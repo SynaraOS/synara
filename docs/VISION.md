@@ -1,4 +1,4 @@
 # Vision
 
-A thin runtime: agents do bounded jobs under pinned policy and leave receipts.
-Alvearium is the protocol. This repo is the laptop-side executor.
+Wagglelit shows agents a pinned path (the dance) and stops them leaving the floor.
+Alvearium is the protocol. Wagglelit is the laptop executor.
